@@ -84,20 +84,6 @@ public class Inputs {
         System.out.println("Total : = " + a + b); //Total : = 72
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
 
