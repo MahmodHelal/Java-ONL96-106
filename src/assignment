@@ -1,0 +1,20 @@
+        // ask user enter positive
+        // 7
+        // accepted you entered 7
+        //--
+        // -2
+        // invalid
+        //ask user enter positive
+        // -10
+        // invalid
+        //ask user enter positive
+        // -11
+        // invalid
+        //ask user enter positive
+        //10
+        // accepted you entered 10
+
+        // store username and password as local variables
+        // ask user to enter username and password
+        // if right print success login
+        // if wrong ask again max tries three times

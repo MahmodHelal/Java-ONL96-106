@@ -1,0 +1,7 @@
+        // declare an array with size 3 name of array is browsers
+        // ask user for entering values of it
+        // user will enter
+        // 0 -> chrome 1-> firefox 2-> edge
+        // after took it from user
+        // change value of edge to safari
+        // then print all values off array
