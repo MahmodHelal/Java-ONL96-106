@@ -1,6 +1,7 @@
 package ArraysSession;
 
-import java.util.Scanner;
+import java.util.Arrays;
+
 
 public class Arrays01 {
 
@@ -77,7 +78,7 @@ public class Arrays01 {
         browser[1] = "Chrome"
         browser[2] = "FireFox"
         */
-        String[] browsers = new String[3];
+/*        String[] browsers = new String[3];
         Scanner input = new Scanner(System.in);
 
         for (int i = 0; i < browsers.length; i++) {
@@ -91,9 +92,7 @@ public class Arrays01 {
             }
         }
         System.out.println("from traditional for ");
-        for (int i = 0; i < browsers.length ;i++){
-            System.out.print(browsers[i] + " ");
-        }
+
         System.out.println();
         System.out.println("from enhanced for ");
         // enhanced for -> for each
@@ -105,7 +104,121 @@ public class Arrays01 {
         // scores with values  -> 85, 92, 78, 96, 88
         // print max and min and their indexes
         // then print average of marks
-        // and print sum of all marks
+        // and print sum of all marks*/
+
+
+
+
+/*
+        int[] ArrayOne = {20, 10, 40, 30};
+        int[] ArrayTwo = Arrays.copyOf(ArrayOne,5);
+        System.out.println(Arrays.toString(ArrayTwo));
+        Arrays.sort(ArrayTwo);
+        System.out.println(Arrays.toString(ArrayTwo));
+
+
+
+        // 2d arrays
+
+        int[] arr = {1,2,3};
+        arr[1] = 20;
+
+
+        int[][] _2DArray = {
+                {1, 2, 3,44},
+                {4, 5, 6,55},
+                {7, 8, 9,66}
+
+        };
+        int[][] _2DArray2 = {{10, 20, 30}, {40, 50, 60,77,88,99}, {70, 80, 90}};
+
+        _2DArray[1][2] = 60;
+        System.out.println(_2DArray[2][1]);
+        System.out.println(_2DArray2[2][2]);
+        System.out.println(_2DArray.length);
+        System.out.println(_2DArray2.length);
+        System.out.println(_2DArray[0].length);
+        System.out.println(_2DArray2[0].length);
+        System.out.println(_2DArray2[1].length);
+*/
+
+        // for each column scores of exams and for each row student
+        int[][] marks = {
+                {80,90},
+                {70,75},
+                {95,100}
+        };
+        int[][] jaggedArr = {
+                {1,2},
+                {3},
+                {4,5,6}
+        };
+        System.out.println("*************");
+        for (int[] row : jaggedArr){
+            for (int var : row){
+                System.out.println(var);
+            }
+        }
+        System.out.println("*************");
+
+
+
+        int[] arr = {1,2};
+        for (int var : arr){
+            System.out.println(var);
+        }
+
+        // enhanced for -> for each
+        // for(DataType var : ArrayName){
+        // sout(var)
+        // }
+
+/*//        int[][] arr = new int[3][5];
+
+        // Students : 3
+        // Exams : 2
+        // Student One : average
+        // Student Two : average
+        // Student Three : average
+//        use nested Loop*/
+        System.out.println("Number Of Students : "+ marks.length);
+        System.out.println("Number of Exams : " + marks[0].length);
+
+
+        for (int row = 0 ; row < marks.length ; row++){
+
+            int sum = 0;
+
+            for (int column =0 ; column < marks[row].length ;column++){
+                sum = sum + marks[row][column];
+            }
+
+            double average = (double) sum / marks[row].length;
+            System.out.println("Student " + (row + 1) + " : " + average);
+
+        }
+
+        // -> 85
+        //marks[0][0] = 80 + 0 = 80 = sum
+        //marks[0][1] = 90 -> sum = 80 + 90 = 170
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
